@@ -39,11 +39,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1647069185,
-        "narHash": "sha256-CtxT7azrMGv1KrMI7Xi0tguzN3R3s57/lPX0ybSv+5I=",
+        "lastModified": 1647113893,
+        "narHash": "sha256-1/43UqAIpNeG4CCSdRngbTk5GkKYGJsEyVLBbzKUims=",
         "owner": "nim-nix-pkgs",
         "repo": "nifty",
-        "rev": "39216ad6b7777943b1cfe1c0925aecdb10e0fe6a",
+        "rev": "37b93d20243a4242366ef03e996f3f8d2515ca7c",
         "type": "github"
       },
       "original": {
@@ -66,13 +66,20 @@
         "src-nifty-master": "src-nifty-master"
       },
       "locked": {
-        "narHash": "sha256-UnIt08OuCTG9I58fsTNx17sZRANy5kyw0o5A8fWqCj4=",
-        "path": "./master",
-        "type": "path"
+        "dir": "master",
+        "lastModified": 1647113893,
+        "narHash": "sha256-1/43UqAIpNeG4CCSdRngbTk5GkKYGJsEyVLBbzKUims=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nifty",
+        "rev": "37b93d20243a4242366ef03e996f3f8d2515ca7c",
+        "type": "github"
       },
       "original": {
-        "path": "./master",
-        "type": "path"
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nifty",
+        "type": "github"
       }
     },
     "nifty-v0_1_0": {
@@ -88,13 +95,20 @@
         "src-nifty-v0_1_0": "src-nifty-v0_1_0"
       },
       "locked": {
-        "narHash": "sha256-IvfwrxHlhKKiqOKfc1tox2CoTAyo4KLqZ5jqNn4hNtg=",
-        "path": "./v0_1_0",
-        "type": "path"
+        "dir": "v0_1_0",
+        "lastModified": 1647113893,
+        "narHash": "sha256-1/43UqAIpNeG4CCSdRngbTk5GkKYGJsEyVLBbzKUims=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nifty",
+        "rev": "37b93d20243a4242366ef03e996f3f8d2515ca7c",
+        "type": "github"
       },
       "original": {
-        "path": "./v0_1_0",
-        "type": "path"
+        "dir": "v0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nifty",
+        "type": "github"
       }
     },
     "nifty-v1_0_0": {
@@ -110,13 +124,20 @@
         "src-nifty-v1_0_0": "src-nifty-v1_0_0"
       },
       "locked": {
-        "narHash": "sha256-U4luDFoknWpdx7M1unR4G9EmujItGDOKKOH30q3PfCw=",
-        "path": "./v1_0_0",
-        "type": "path"
+        "dir": "v1_0_0",
+        "lastModified": 1647113893,
+        "narHash": "sha256-1/43UqAIpNeG4CCSdRngbTk5GkKYGJsEyVLBbzKUims=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nifty",
+        "rev": "37b93d20243a4242366ef03e996f3f8d2515ca7c",
+        "type": "github"
       },
       "original": {
-        "path": "./v1_0_0",
-        "type": "path"
+        "dir": "v1_0_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nifty",
+        "type": "github"
       }
     },
     "nifty-v1_0_1": {
@@ -132,13 +153,20 @@
         "src-nifty-v1_0_1": "src-nifty-v1_0_1"
       },
       "locked": {
-        "narHash": "sha256-3uXLl1EmKEi+F1eWzf6UWm35RxuPQXkIhBn6K7keQzg=",
-        "path": "./v1_0_1",
-        "type": "path"
+        "dir": "v1_0_1",
+        "lastModified": 1647113893,
+        "narHash": "sha256-1/43UqAIpNeG4CCSdRngbTk5GkKYGJsEyVLBbzKUims=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nifty",
+        "rev": "37b93d20243a4242366ef03e996f3f8d2515ca7c",
+        "type": "github"
       },
       "original": {
-        "path": "./v1_0_1",
-        "type": "path"
+        "dir": "v1_0_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nifty",
+        "type": "github"
       }
     },
     "nifty-v1_1_0": {
@@ -154,13 +182,20 @@
         "src-nifty-v1_1_0": "src-nifty-v1_1_0"
       },
       "locked": {
-        "narHash": "sha256-EUP7lGajRBIhyugXncnrCG6dM2QdkfEWlD6qa4fUcg0=",
-        "path": "./v1_1_0",
-        "type": "path"
+        "dir": "v1_1_0",
+        "lastModified": 1647113893,
+        "narHash": "sha256-1/43UqAIpNeG4CCSdRngbTk5GkKYGJsEyVLBbzKUims=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nifty",
+        "rev": "37b93d20243a4242366ef03e996f3f8d2515ca7c",
+        "type": "github"
       },
       "original": {
-        "path": "./v1_1_0",
-        "type": "path"
+        "dir": "v1_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nifty",
+        "type": "github"
       }
     },
     "nifty-v1_2_0": {
@@ -176,13 +211,20 @@
         "src-nifty-v1_2_0": "src-nifty-v1_2_0"
       },
       "locked": {
-        "narHash": "sha256-0RYg3bSJC6dFtVZgp3BKJqZSI4hRhr7k+re/dg7F1QI=",
-        "path": "./v1_2_0",
-        "type": "path"
+        "dir": "v1_2_0",
+        "lastModified": 1647113893,
+        "narHash": "sha256-1/43UqAIpNeG4CCSdRngbTk5GkKYGJsEyVLBbzKUims=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nifty",
+        "rev": "37b93d20243a4242366ef03e996f3f8d2515ca7c",
+        "type": "github"
       },
       "original": {
-        "path": "./v1_2_0",
-        "type": "path"
+        "dir": "v1_2_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nifty",
+        "type": "github"
       }
     },
     "nifty-v1_2_1": {
@@ -198,13 +240,20 @@
         "src-nifty-v1_2_1": "src-nifty-v1_2_1"
       },
       "locked": {
-        "narHash": "sha256-plgxhl+wYZBzsfTh1n8w4Vu7wPFKB2n3OmYCyZHbKrs=",
-        "path": "./v1_2_1",
-        "type": "path"
+        "dir": "v1_2_1",
+        "lastModified": 1647113893,
+        "narHash": "sha256-1/43UqAIpNeG4CCSdRngbTk5GkKYGJsEyVLBbzKUims=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nifty",
+        "rev": "37b93d20243a4242366ef03e996f3f8d2515ca7c",
+        "type": "github"
       },
       "original": {
-        "path": "./v1_2_1",
-        "type": "path"
+        "dir": "v1_2_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nifty",
+        "type": "github"
       }
     },
     "nifty-v1_2_2": {
@@ -220,13 +269,20 @@
         "src-nifty-v1_2_2": "src-nifty-v1_2_2"
       },
       "locked": {
-        "narHash": "sha256-5ln15sulbGmmSIVY8DIT21Agu/WVGpuU9+5wNAuokyY=",
-        "path": "./v1_2_2",
-        "type": "path"
+        "dir": "v1_2_2",
+        "lastModified": 1647113893,
+        "narHash": "sha256-1/43UqAIpNeG4CCSdRngbTk5GkKYGJsEyVLBbzKUims=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nifty",
+        "rev": "37b93d20243a4242366ef03e996f3f8d2515ca7c",
+        "type": "github"
       },
       "original": {
-        "path": "./v1_2_2",
-        "type": "path"
+        "dir": "v1_2_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nifty",
+        "type": "github"
       }
     },
     "nixpkgs": {
