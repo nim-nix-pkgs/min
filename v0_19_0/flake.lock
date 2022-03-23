@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1647920574,
+        "narHash": "sha256-D3ob5QykELhyNcTnISOkjEzLlgXltwON8Ucrz5cpiQI=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "bfb46a1f762002f07f9d81d93dacd544c6890623",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nifty": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nifty-v1_2_2": "src-nifty-v1_2_2"
+      },
+      "locked": {
+        "dir": "v1_2_2",
+        "lastModified": 1647934314,
+        "narHash": "sha256-uLI6E/eIGNwmhqKcsRfqW3850R6x8ufWXB3Jh2AK2W0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nifty",
+        "rev": "a0b2a8c9324eb1b95f08ff73a67444d0216a3b73",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_2_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nifty",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nifty": "nifty",
+        "nixpkgs": "nixpkgs",
+        "src-min-v0_19_0": "src-min-v0_19_0"
+      }
+    },
+    "src-min-v0_19_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1534072968,
+        "narHash": "sha256-U3wxKQIload9hlPGJXG8aZnBwZogyoUwUJVewQYZenw=",
+        "owner": "h3rald",
+        "repo": "min",
+        "rev": "50126047033d60b86026994d7178dc0ea2c2fa80",
+        "type": "github"
+      },
+      "original": {
+        "owner": "h3rald",
+        "ref": "refs/tags/v0.19.0",
+        "repo": "min",
+        "type": "github"
+      }
+    },
+    "src-nifty-v1_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603640331,
+        "narHash": "sha256-mlZPB9pkdgSf8XrvEN8EkNeXhyGPf50jx3VVVRNyKDA=",
+        "owner": "h3rald",
+        "repo": "nifty",
+        "rev": "4d0d0181f89d922961769489893d44b6fb593b04",
+        "type": "github"
+      },
+      "original": {
+        "owner": "h3rald",
+        "ref": "refs/tags/v1.2.2",
+        "repo": "nifty",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
