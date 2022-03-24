@@ -1,5 +1,5 @@
 {
-  description = ''A small but practical concatenative programming language and shell.'';
+  description = ''A tiny concatenative programming language and shell.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -12,6 +12,14 @@
   inputs.src-min-0_19_6.owner = "h3rald";
   inputs.src-min-0_19_6.repo  = "min";
   inputs.src-min-0_19_6.type  = "github";
+  
+  inputs."nifty".owner = "nim-nix-pkgs";
+  inputs."nifty".ref   = "master";
+  inputs."nifty".repo  = "nifty";
+  inputs."nifty".dir   = "v1_2_2";
+  inputs."nifty".type  = "github";
+  inputs."nifty".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nifty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

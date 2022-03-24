@@ -1,5 +1,5 @@
 {
-  description = ''A small but practical concatenative programming language and shell.'';
+  description = ''A tiny concatenative programming language and shell.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";

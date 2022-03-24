@@ -36,7 +36,8 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
-        "src-min-v0_35_0": "src-min-v0_35_0"
+        "src-min-v0_35_0": "src-min-v0_35_0",
+        "zippy": "zippy"
       }
     },
     "src-min-v0_35_0": {
@@ -53,6 +54,50 @@
         "owner": "h3rald",
         "ref": "refs/tags/v0.35.0",
         "repo": "min",
+        "type": "github"
+      }
+    },
+    "src-zippy-0_9_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643953702,
+        "narHash": "sha256-hIq+inWzFXCj5d0qBzi2li/3rpgAePmrizUCBZizmFY=",
+        "owner": "guzba",
+        "repo": "zippy",
+        "rev": "4a7ff984cc97f3930007468ff265726d019c4a52",
+        "type": "github"
+      },
+      "original": {
+        "owner": "guzba",
+        "ref": "refs/tags/0.9.7",
+        "repo": "zippy",
+        "type": "github"
+      }
+    },
+    "zippy": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-zippy-0_9_7": "src-zippy-0_9_7"
+      },
+      "locked": {
+        "dir": "0_9_7",
+        "lastModified": 1647935082,
+        "narHash": "sha256-cp9FNhu5QcPDgbGg21CEpuhi6HS7hU0HiJ/2e5OgPZI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "zippy",
+        "rev": "f16d263cbf05753093e02c2dce119e262e397e9f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_9_7",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "zippy",
         "type": "github"
       }
     }
