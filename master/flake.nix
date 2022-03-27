@@ -11,6 +11,7 @@
   inputs.src-min-master.ref   = "refs/heads/master";
   inputs.src-min-master.owner = "h3rald";
   inputs.src-min-master.repo  = "min";
+  inputs.src-min-master.dir   = "";
   inputs.src-min-master.type  = "github";
   
   inputs."zippy".owner = "nim-nix-pkgs";
