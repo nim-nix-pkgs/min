@@ -11,7 +11,6 @@
   inputs.src-min-v0_19_4.ref   = "refs/tags/v0.19.4";
   inputs.src-min-v0_19_4.owner = "h3rald";
   inputs.src-min-v0_19_4.repo  = "min";
-  inputs.src-min-v0_19_4.dir   = "";
   inputs.src-min-v0_19_4.type  = "github";
   
   inputs."nifty".owner = "nim-nix-pkgs";

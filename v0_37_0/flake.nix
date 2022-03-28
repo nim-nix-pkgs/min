@@ -11,7 +11,6 @@
   inputs.src-min-v0_37_0.ref   = "refs/tags/v0.37.0";
   inputs.src-min-v0_37_0.owner = "h3rald";
   inputs.src-min-v0_37_0.repo  = "min";
-  inputs.src-min-v0_37_0.dir   = "";
   inputs.src-min-v0_37_0.type  = "github";
   
   inputs."zippy".owner = "nim-nix-pkgs";

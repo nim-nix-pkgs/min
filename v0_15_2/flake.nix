@@ -11,7 +11,6 @@
   inputs.src-min-v0_15_2.ref   = "refs/tags/v0.15.2";
   inputs.src-min-v0_15_2.owner = "h3rald";
   inputs.src-min-v0_15_2.repo  = "min";
-  inputs.src-min-v0_15_2.dir   = "";
   inputs.src-min-v0_15_2.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
