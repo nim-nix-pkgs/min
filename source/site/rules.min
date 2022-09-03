@@ -1,0 +1,106 @@
+'hastysite import
+
+;Routing
+(
+  (dict) expect -> :meta
+  meta /id :id
+  meta /ext :ext
+  (
+    ((id "home" ==) (
+      meta (
+        ("index" %id)
+        (".html" %ext)
+      ) tap
+    ))
+    ((ext ".md" ==) (
+      meta (
+        (".html" %ext)
+        ("$1/index" (id) => % %id)
+      ) tap
+    ))
+  ) case
+) ^set-destination
+
+;Processing operators
+(
+  ('sym dict) expect -> :tpl :meta
+  "" :page
+  "" :contents
+  meta (
+    (input-fread @contents meta)
+    (settings /title %site)
+    (settings /version %version)
+    (:temp contents temp markdown @contents temp)
+    (contents %contents)
+    (:temp tpl temp mustache @page temp)
+    (page %contents)
+  ) tap
+) ^process-md-with-template
+
+(
+  (dict) expect -> :meta
+  meta /content-type :ct
+  meta ct process-md-with-template
+) ^process-md-content
+
+(
+  (dict) expect -> :meta
+  meta /ext :ext
+  meta
+  (
+    ((".md" ext ==) (process-md-content))
+  ) case
+) ^process-content
+
+(
+  (dict) expect -> :meta
+  "" :contents
+  meta (
+    (input-fread @contents meta)
+    (:temp contents preprocess-css @contents temp)
+    (contents %contents)
+  ) tap
+  output-fwrite
+) ^process-css-asset
+
+(
+  "Downloading latest min executables..." notice!
+  settings /version :version
+  ("windows" "macosx" "linux")
+  (
+    :opsys
+    "https://github.com/h3rald/min/releases/download/v$1/min_v$1_$2_x64.zip" (version opsys) =% :remote
+    "min_$#.zip" (opsys) =% :local
+    "wget $# -O $#" (remote local) =% :cmd
+    cmd system 
+    "assets/downloads/$#/" (opsys) =% :dir
+    "assets/downloads/" mkdir
+    "unzip $# -d $#" (local dir) =% @cmd
+    cmd system!
+    local rm
+  ) foreach
+) ^download-latest-min-exes
+
+;Main
+
+download-latest-min-exes
+
+"Processing contents..." notice!
+contents (
+  (dict) expect -> 
+  dup
+  (
+    ((/id "^_" match?) ()) ;Ignore files starting with underscore.
+    ((true) (process-content set-destination output-fwrite)) 
+  ) case
+) foreach
+
+"Processing assets..." notice!
+assets (
+  (dict) expect -> 
+  dup
+  (
+    ((/ext ".css" match?) (process-css-asset))
+    ((true) (output-cp))
+  ) case
+) foreach

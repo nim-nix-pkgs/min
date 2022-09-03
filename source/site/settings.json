@@ -1,0 +1,10 @@
+{
+  "assets": "assets",
+  "contents": "contents",
+  "output": "output",
+  "rules": "rules.min",
+  "temp": "temp",
+  "templates": "templates",
+  "title": "min language",
+  "version": "0.37.0"
+}
